@@ -1,38 +1,1153 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+#root {
+  background-color: #e5e5e5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  background-color: #e5e5e5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 960px) and (max-width: 1081px) {
+  .highlight-panel {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 16px;
+  }
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: red;
+    background: black;
+  }
+  .carousel .carousel-image {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .carousel .center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: #007bc1;
+    opacity: 0.2;
+  }
+  .carousel .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+  }
+  .carousel .centered .h1 {
+    font-size: 32px;
+    color: white;
+  }
+  .carousel .centered .h4 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+  .carousel .centered .p {
+    font-size: 18px;
+    color: white;
+  }
+  .carousel .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    width: 60px;
+    margin: 50px;
+  }
+  .carousel .btn-transparant {
+    background-color: transparent;
+    border: 1.2px solid white;
+    color: white;
+  }
+  .carousel .btn-transparant:hover {
+    background-color: white;
+    border: transparent;
+    color: #007bc1;
+  }
+  .carousel .ant-btn > span {
+    font-weight: 900;
+  }
+  .top {
+    background: #e5e5e5;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+  .notification {
+    background: ​ #e5e5e5;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification > p {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .notification > button {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .body-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 300px 300px;
+        grid-template-rows: 300px 300px;
+    -ms-grid-columns: 300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .body-card .ant-card {
+    width: 290px !important;
+    height: 250px !important;
+    background-color: #e5e5e5;
+    border: 1px solid #8a8787;
+    padding: 10px;
+    -webkit-box-shadow: 2px 2px 2px 2px #8a8787;
+            box-shadow: 2px 2px 2px 2px #8a8787;
+  }
+  .body-card .ant-card-head {
+    border-bottom: 0px solid !important;
+  }
+  .body-card .title-card {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-card .title-card > span {
+    font-size: 28px;
+  }
+  .newsletter-content {
+    background: #007bc1;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    bottom: 0px;
+    z-index: 1;
+    height: 180px;
+    width: 500px;
+  }
+  .newsletter-content .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-content .newsletter > h1 {
+    margin: 10px 0px 0px 17px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter > span {
+    color: white !important;
+  }
+  .newsletter-content .newsletter-body > p {
+    color: white;
+    font-size: 13px;
+    margin: 0px 0px 20px 20px;
+    width: 90%;
+  }
+  .newsletter-content .newsletter-footer {
+    margin-bottom: -20px;
+  }
+  .newsletter-content .newsletter-footer .ant-input {
+    width: 50%;
+    margin: -20px 0px 0px 20px;
+  }
+  .newsletter-content .newsletter-footer .ant-btn {
+    margin-left: 20px;
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter-footer .ant-btn:hover {
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .footer-content {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #12092e !important;
+  }
+  .footer-content h1 {
+    font-size: 16px;
+    color: white;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 1081px) {
+  .highlight-panel {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 16px;
+  }
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: red;
+    background: black;
+  }
+  .carousel .carousel-image {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .carousel .center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: #007bc1;
+    opacity: 0.2;
+  }
+  .carousel .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+  }
+  .carousel .centered .h1 {
+    font-size: 32px;
+    color: white;
+  }
+  .carousel .centered .h4 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+  .carousel .centered .p {
+    font-size: 18px;
+    color: white;
+  }
+  .carousel .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    width: 60px;
+    margin: 50px;
+  }
+  .carousel .btn-transparant {
+    background-color: transparent;
+    border: 1.2px solid white;
+    color: white;
+  }
+  .carousel .btn-transparant:hover {
+    background-color: white;
+    border: transparent;
+    color: #007bc1;
+  }
+  .carousel .ant-btn > span {
+    font-weight: 900;
+  }
+  .top {
+    background: #e5e5e5;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+  .notification {
+    background: ​ #e5e5e5;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification > p {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .notification > button {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .body-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 300px 300px;
+        grid-template-rows: 300px 300px;
+    -ms-grid-columns: 380px 380px 380px;
+        grid-template-columns: 380px 380px 380px;
+    justify-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .body-card .ant-card {
+    width: 330px !important;
+    height: 250px !important;
+    background-color: #e5e5e5;
+    border: 1px solid #8a8787;
+    padding: 10px;
+    -webkit-box-shadow: 2px 2px 2px 2px #8a8787;
+            box-shadow: 2px 2px 2px 2px #8a8787;
+  }
+  .body-card .ant-card-head {
+    border-bottom: 0px solid !important;
+  }
+  .body-card .title-card {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-card .title-card > span {
+    font-size: 28px;
+  }
+  .newsletter-content {
+    background: #007bc1;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    bottom: 0px;
+    z-index: 1;
+    height: 180px;
+    width: 600px;
+  }
+  .newsletter-content .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-content .newsletter > h1 {
+    margin: 10px 0px 0px 17px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter > span {
+    color: white !important;
+  }
+  .newsletter-content .newsletter-body > p {
+    color: white;
+    font-size: 15px;
+    margin: 0px 0px 20px 20px;
+    width: 90%;
+  }
+  .newsletter-content .newsletter-footer {
+    margin-bottom: -20px;
+  }
+  .newsletter-content .newsletter-footer .ant-input {
+    width: 70%;
+    margin: -20px 0px 0px 20px;
+  }
+  .newsletter-content .newsletter-footer .ant-btn {
+    margin-left: 20px;
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter-footer .ant-btn:hover {
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .footer-content {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #12092e !important;
+  }
+  .footer-content h1 {
+    font-size: 16px;
+    color: white;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-width: 629px) and (max-width: 959px) {
+  .highlight-panel {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 16px;
+  }
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: red;
+    background: black;
+  }
+  .carousel .carousel-image {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .carousel .center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: #007bc1;
+    opacity: 0.2;
+  }
+  .carousel .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+  }
+  .carousel .centered .h1 {
+    font-size: 24px;
+    color: white;
+  }
+  .carousel .centered .h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  .carousel .centered .p {
+    font-size: 16px;
+    color: white;
+  }
+  .carousel .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    width: 60px;
+    margin: 50px;
+  }
+  .carousel .btn-transparant {
+    background-color: transparent;
+    border: 1.2px solid white;
+    color: white;
+  }
+  .carousel .btn-transparant:hover {
+    background-color: white;
+    border: transparent;
+    color: #007bc1;
+  }
+  .carousel .ant-btn > span {
+    font-weight: 900;
+  }
+  .top {
+    background: #e5e5e5;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+  .notification {
+    background: ​ #e5e5e5;
+    width: 100%;
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification > p {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .notification > button {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .body-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 350px 350px 350px;
+        grid-template-rows: 350px 350px 350px;
+    -ms-grid-columns: 320px 320px;
+        grid-template-columns: 320px 320px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .body-card .ant-card {
+    width: 280px !important;
+    height: 280px !important;
+    background-color: #e5e5e5;
+    border: 1px solid #8a8787;
+    -webkit-box-shadow: 2px 2px 2px 2px #8a8787;
+            box-shadow: 2px 2px 2px 2px #8a8787;
+    margin-bottom: 30px;
+  }
+  .body-card .ant-card-head {
+    border-bottom: 0px solid !important;
+  }
+  .body-card .title-card {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-card .title-card > span {
+    font-size: 28px;
+  }
+  .newsletter-content {
+    background: #007bc1;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    bottom: 0px;
+    z-index: 1;
+    height: 180px;
+    width: 400px;
+  }
+  .newsletter-content .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-content .newsletter > h1 {
+    margin: 10px 0px 0px 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter > span {
+    color: white !important;
+  }
+  .newsletter-content .newsletter-body > p {
+    color: white;
+    font-size: 12px;
+    margin: 0px 0px 20px 20px;
+    width: 90%;
+  }
+  .newsletter-content .newsletter-footer {
+    margin-bottom: -20px;
+  }
+  .newsletter-content .newsletter-footer .ant-input {
+    width: 50%;
+    margin: -20px 0px 0px 20px;
+  }
+  .newsletter-content .newsletter-footer .ant-btn {
+    margin-left: 20px;
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter-footer .ant-btn:hover {
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .footer-content {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #12092e !important;
+  }
+  .footer-content h1 {
+    font-size: 16px;
+    color: white;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 415px) and (max-width: 628px) {
+  .highlight-panel {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: red;
+    background: black;
+  }
+  .carousel .carousel-image {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .carousel .center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: #007bc1;
+    opacity: 0.2;
+  }
+  .carousel .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+  }
+  .carousel .centered .h1 {
+    font-size: 18px;
+    color: white;
+  }
+  .carousel .centered .h4 {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+  }
+  .carousel .centered .p {
+    font-size: 13px;
+    color: white;
+  }
+  .carousel .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    width: 50px;
+    margin: 50px;
+  }
+  .carousel .btn-transparant {
+    background-color: transparent;
+    border: 1.2px solid white;
+    color: white;
+  }
+  .carousel .btn-transparant:hover {
+    background-color: white;
+    border: transparent;
+    color: #007bc1;
+  }
+  .carousel .ant-btn > span {
+    font-weight: 900;
+    font-size: 12px;
+  }
+  .top {
+    background: #e5e5e5;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+  .notification {
+    background: ​ #e5e5e5;
+    width: 100%;
+    height: 5   0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification > p {
+    margin-top: 10px;
+    font-size: 9.5px;
+  }
+  .notification > button {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .body-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 350px 350px 350px;
+        grid-template-rows: 350px 350px 350px;
+    -ms-grid-columns: 290px;
+        grid-template-columns: 290px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body-card .ant-card {
+    width: 280px !important;
+    height: 280px !important;
+    background-color: #e5e5e5;
+    border: 1px solid #8a8787;
+    -webkit-box-shadow: 2px 2px 2px 2px #8a8787;
+            box-shadow: 2px 2px 2px 2px #8a8787;
+    margin-bottom: 30px;
+  }
+  .body-card .ant-card-head {
+    border-bottom: 0px solid !important;
+  }
+  .body-card .title-card {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-card .title-card > span {
+    font-size: 28px;
+  }
+  .newsletter-content {
+    background: #007bc1;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    bottom: 0px;
+    z-index: 1;
+    height: 180px;
+    width: 400px;
+  }
+  .newsletter-content .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-content .newsletter > h1 {
+    margin: 10px 0px 0px 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter > span {
+    color: white !important;
+  }
+  .newsletter-content .newsletter-body > p {
+    color: white;
+    font-size: 12px;
+    margin: 0px 0px 20px 20px;
+    width: 90%;
+  }
+  .newsletter-content .newsletter-footer {
+    margin-bottom: -20px;
+  }
+  .newsletter-content .newsletter-footer .ant-input {
+    width: 50%;
+    margin: -20px 0px 0px 20px;
+  }
+  .newsletter-content .newsletter-footer .ant-btn {
+    margin-left: 20px;
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter-footer .ant-btn:hover {
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .footer-content {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #12092e !important;
+  }
+  .footer-content h1 {
+    font-size: 13px;
+    color: white;
   }
 }
+
+@media only screen and (max-width: 415px) {
+  .highlight-panel {
+    width: 60%;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 14px;
+  }
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e5e5e5;
+  }
+  .carousel {
+    position: relative;
+    text-align: center;
+    color: red;
+    background: black;
+  }
+  .carousel .carousel-image {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(0.4);
+            filter: brightness(0.4);
+  }
+  .carousel .center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: #007bc1;
+    opacity: 0.2;
+  }
+  .carousel .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+  }
+  .carousel .centered .h1 {
+    font-size: 18px;
+    color: white;
+  }
+  .carousel .centered .h4 {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+  }
+  .carousel .centered .p {
+    font-size: 13px;
+    color: white;
+  }
+  .carousel .logo-image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    width: 50px;
+    margin: 50px;
+  }
+  .carousel .btn-transparant {
+    background-color: transparent;
+    border: 1.2px solid white;
+    color: white;
+  }
+  .carousel .btn-transparant:hover {
+    background-color: white;
+    border: transparent;
+    color: #007bc1;
+  }
+  .carousel .ant-btn > span {
+    font-weight: 900;
+    font-size: 12px;
+  }
+  .top {
+    background: #e5e5e5;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+  .notification {
+    background: ​ #e5e5e5;
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification > p {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+  .notification > button {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .body-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+    -ms-grid-columns: 290px;
+        grid-template-columns: 290px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .body-card .ant-card {
+    width: 250px !important;
+    height: 250px !important;
+    background-color: #e5e5e5;
+    border: 1px solid #8a8787;
+    -webkit-box-shadow: 2px 2px 2px 2px #8a8787;
+            box-shadow: 2px 2px 2px 2px #8a8787;
+    margin-bottom: 30px;
+  }
+  .body-card .ant-card-head {
+    border-bottom: 0px solid !important;
+  }
+  .body-card .title-card {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-card .title-card > span {
+    font-size: 28px;
+  }
+  .newsletter-content {
+    background: #007bc1;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    bottom: 0px;
+    z-index: 1;
+    height: 180px;
+    width: 370px;
+  }
+  .newsletter-content .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter-content .newsletter > h1 {
+    margin: 10px 0px 0px 17px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter > span {
+    color: white !important;
+  }
+  .newsletter-content .newsletter-body > p {
+    color: white;
+    font-size: 12px;
+    margin: 0px 0px 20px 20px;
+    width: 90%;
+  }
+  .newsletter-content .newsletter-footer {
+    margin-bottom: -20px;
+  }
+  .newsletter-content .newsletter-footer .ant-input {
+    width: 50%;
+    margin: -20px 0px 0px 20px;
+  }
+  .newsletter-content .newsletter-footer .ant-btn {
+    margin-left: 20px;
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .newsletter-content .newsletter-footer .ant-btn:hover {
+    background: #FF8000 !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  .footer-content {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #12092e !important;
+  }
+  .footer-content h1 {
+    font-size: 13px;
+    color: white;
+  }
+}
+/*# sourceMappingURL=App.css.map */
